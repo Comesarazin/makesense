@@ -1,0 +1,175 @@
+h1 {
+    font-size: 2rem;
+    font-family: $font-text;
+    color: #0B3A44;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+}
+
+.search {
+    font-family: $font-text;
+    color: #0B3A44;
+    font-size: 1.7rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.37rem;
+}
+
+.input {
+    float: right;
+    margin-right: 0.1%;
+    margin-top: 3%;
+    padding: 0.5rem;
+    background-color: rgba(25, 108, 132, 0.30);
+    border-radius: 6.6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0B3A44;
+    border: none;
+    cursor: pointer;
+}
+
+.required {
+    margin-right: 1rem;
+    color: #0B3A44;
+}
+
+#search_user_Recherche {
+    border-radius: 0.37rem;
+    padding-left: 0.5rem;
+    width: 20rem;
+    padding-top: 0.5rem;
+}
+
+.my-class {
+    font-family: $font-text;
+    color: #0B3A44;
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #9fa9b7;
+    box-shadow: $box-shadow-total;
+    padding: 1rem;
+    margin: 7rem;
+}
+
+.my-class th,
+.my-class td {
+    padding-left: 1.5rem;
+    //line-height: 1.42857143;
+    border: 1px black;
+}
+
+.my-class th {
+    border-radius: 0rem 3.1rem;
+    background-color: white;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+}
+
+.my-class tbody > tr:nth-child(odd) > td,
+.my-class tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+}
+
+.tbody {
+    background-color: rgba(69, 124, 140, 0.3);
+    cursor: pointer;
+}
+
+.my-class tbody > tr:hover {
+    transition: transform .6s;
+}
+
+#user {
+    width: 400px;
+    margin: auto;
+    margin-bottom: -2rem;
+    padding: 2rem;
+    color: #0B3A44;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    border-radius: $border-radius;
+    background-color: $color-second;
+    box-shadow: $box-shadow-total;
+}
+
+.container-admin {
+    display: flex;
+    justify-content: center;
+}
+
+#user_lastname,
+#user_firstname,
+#user_email,
+#user_roles,
+#user_phoneNumber,
+#user_city,
+#user_occupation {
+    float: right;
+    color: #0B3A44;
+    margin-block: 0.3rem;
+    padding-top: 0.5rem;
+    border-radius: 0.37rem;
+}
+
+.btn {
+    float: right;
+    margin-right: 8%;
+    margin-top: 6%;
+    padding: 0.5rem;
+    background-color: rgba(25, 108, 132, 0.30);
+    border-radius: 6.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0B3A44;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .my-class th,
+    .my-class td {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3px;
+    }
+    .my-class th{
+        display: none;
+    }
+    .my-class {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    #user_lastname,
+    #user_firstname,
+    #user_email,
+    #user_roles,
+    #user_phoneNumber,
+    #user_city,
+    #user_occupation {
+        float: none;
+        margin-right: 0;
+    }
+
+    #user{
+        width: 150px;
+        margin-bottom: 0;
+    }
+
+    #search_user_Recherche {
+        border-radius: 0.37rem;
+        width: 10rem;
+
+    }
+
+    .input {
+        margin-right: 0.1rem;
+    }
+}

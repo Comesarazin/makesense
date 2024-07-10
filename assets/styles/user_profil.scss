@@ -1,0 +1,71 @@
+.profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profil-bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-second;
+    box-shadow: $box-shadow;
+    padding: 5px;
+    width: 23rem;
+    height: 17rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profil-bloc>textarea {
+    width: 20rem;
+    height: 10rem;
+}
+
+.profil-bloc-modif {
+   align-items: flex-start;
+}
+
+.profil-bloc-row>input {
+    width: calc(100% - 150px); /* Calculer la largeur pour occuper l'espace restant */
+    margin-right: 10px;
+    padding-top: 0.5rem;
+    border-radius: 6px;
+    padding-left: 0.5rem;
+}
+
+.profil-bloc-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.profil-bloc>img {
+    width: 9rem;
+    border-radius: 4.5rem;
+}
+
+modif-profil {
+    color: $color-text;
+    background-color: $color-button;
+    border: none;
+    border-radius: $border-radius-button;
+    padding: 0.6rem 1.8rem;
+    margin: $margin-little;
+    font-size: $size-h2;
+    font-family: $font-text;
+    box-shadow: $box-shadow;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+}
